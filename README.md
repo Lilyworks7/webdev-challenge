@@ -1,22 +1,29 @@
 # NRI Web Development Challenge
-To better gauge your skills as a web developer, we would like you to complete the following challenge. This will help the interviewers assess your strengths, and frame the conversation through the interview process. Take as much time as you need, however we ask that you not spend more than a few hours. 
 
 At this time, we require you to use a PHP MVC framework, preferably Laravel to complete the challenge. If you don't yet know Laravel, [give it a try](https://laravel.com/), it has a gentle learning curve. For the frontend, please use your favourite frameworks or libararies such as bootstrap, jquery, foundation, vuejs...etc. If you prefer NOT using any, please provide us with reasons as to why. However, here at NRI, we use Laravel, Bootstrap & jQuery, and it would help us to evaluate what we know and use.
 
-## Submission Instructions
-1. Fork this project on github. You will need to create an account if you don't already have one
-2. Complete the challenge within your fork after reading below details.
-3. Push all of your changes to your fork on github and submit a pull request.
+_______________________________________________________________________________
+I wrote the code using:
+Laravel framework
+Bootstrap & jQuery
+_________________________________________________________________________________
 
 ## Project Description
 Imagine that NRI has won some items from an auction. From the auctioneer, we have received the item details electronically. We would like to import this dataset into our central inventory system. Your task is to create a simple web interface that will accept a `.csv` file and then store them in a relation database.
+
+________________________________________________________________________________________________________________________________
+The script allows users to upload a comma delimited csv file, any other file extentions are not allowed. Once the file is uploaded the script reads the file and parses the columns and saves the values to a database table named auctioned_items.  
+________________________________________________________________________________________________________________________________
 
 ### What your web application must do:
 1. Show a simple, attractive web interface that allows users to upload a file.
 2. Gets the uploaded csv file, parses it and saves it into a RDB.
 3. After saving into the RDB, displays the total spending amount per-month and per-category.
 4. These are the basic requirements of this challenge. Other features you implement will count as bonus.
-
+________________________________________________________________________________________
+After saving the entries to the database, the script returns a message indicating successfull upload and insertion and
+displays the total spending amount per-month and per-category.
+____________________________________________________________________________________________
 * Your app must accept a comma separated file with the following columns:date, category, lot title, lot location, lot condition, pre-tax amount, tax name, tax amount
 * You can make the following assumptions
      - Columns will always be in that order
@@ -30,6 +37,15 @@ Your application should be easy to set up, and should run on Linux distros such 
 There are many ways that this application could be built; we ask that you build it in a way that showcases one of your strengths (OOP, clean interface, clean code, extensible code, high code quailty, beautiful frontend...etc). If you you enjoy front-end development, do something interesting with the interface. If you like object-oriented design, feel free to dive deeper into the domain model of this problem. We're happy to tweak the requirements slightly if it helps you show off one of your strengths.
 
 Once you're done, please submit a paragraph or two in your `README` about what you are particularly proud of in your implementation, and why.
+__________________________________________________________________________________________________________________________
+I  like the look and functionality of the File uploader and the overall color schemes. I added the top navigation including responsive
+code as well. 
+___________________________________________________________________________________________________________________________
+
+## Submission Instructions
+1. Fork this project on github. You will need to create an account if you don't already have one
+2. Complete the challenge within your fork after reading below details.
+3. Push all of your changes to your fork on github and submit a pull request.
 
 ## Evaluation
 Evaluation of your submission will be based on the following criteria. 
